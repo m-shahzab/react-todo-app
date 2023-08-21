@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function TodoPopUp({ showModel, setshowModel, type, todo }) {
-  console.log("TodoPopUp commponet");
+
   const dispatch = useTodoDispatch();
   const [title, setTitle] = useState("");
   const [status, setStatus] = useState("incomplete");

@@ -4,7 +4,6 @@ import TodosList from "./context/TodosList";
 import FilterContext from "./context/FilterContext";
 
 function AppContent() {
-  console.log("app content ");
   const todos = useContext(TodosList);
   const { filter } = useContext(FilterContext);
   const sortedTodos = [...todos];

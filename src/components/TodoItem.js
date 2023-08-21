@@ -4,7 +4,6 @@ import useTodoDispatch from "./hooks/TodoDispatch";
 import TodoPopUp from "./TodoPopUp";
 import { toast } from "react-toastify";
 function TodoItem({ todo }) {
-  console.log("todoItem component");
   const dispatch = useTodoDispatch();
   const [showModel, setshowModel] = useState(false);
   const [checked, setChecked] = useState(false);

@@ -3,8 +3,6 @@ import SelectBtn from "./SelectBtn";
 import "./AppHeader.css";
 
 function AppHeader({ setshowModel }) {
-  console.log("Header Components");
-
   return (
     <div className="app-header">
       <h1 style={{ textAlign: "center" }}>Todo App</h1>

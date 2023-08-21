@@ -8,7 +8,6 @@ import FilterContext from "./components/context/FilterContext";
 import { ToastContainer } from "react-toastify";
 
 function App() {
-  console.log("App Components");
   const todosArry = JSON.parse(window.localStorage.getItem("todo")) || [];
   const todoRedFun = (todos, action) => {
     switch (action.type) {
@@ -34,7 +33,6 @@ function App() {
     }
   };
   const [todos, dispatch] = useReducer(todoRedFun, todosArry);
-  console.log("ss");
   const [showModel, setshowModel] = useState(false);
   const [filter, setFilter] = useState("all");
   useEffect(() => {
