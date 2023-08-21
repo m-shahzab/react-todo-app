@@ -34,7 +34,7 @@ function App() {
     }
   };
   const [todos, dispatch] = useReducer(todoRedFun, todosArry);
-
+  console.log("ss");
   const [showModel, setshowModel] = useState(false);
   const [filter, setFilter] = useState("all");
   useEffect(() => {
@@ -64,7 +64,6 @@ function App() {
             draggable
             pauseOnHover
             theme="light"
-            
           />
         </FilterContext.Provider>
       </TodoDispatch.Provider>
