@@ -1,0 +1,31 @@
+.item-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+  background-color: var(--bgClr2);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-block-start: 1rem;
+  & .todoItem {
+    background-color: var(--bgClr);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    & .items {
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+    }
+    & .itemAcion {
+      display: flex;
+      column-gap: 0.5rem;
+      & .todoItem_icon__\+DYyU {
+        padding: 0.5rem;
+        background-color: var(--bgClr2);
+        border-radius: 0.3rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
